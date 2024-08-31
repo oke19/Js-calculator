@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="font-bold p-4 bg-gray-400">Infinite-Loops/\\</h1>
+    <div class="flex justify-center bg-gray-300  ">
+     <div id="calculator" class="grid grid-cols-1  text-white font-bold text-2xl h-full  bg-gray-900 py-4 my-4 rounded-xl ">
+        <input class="rounded text-white bg-gray-500 p-4  m-5" id="display" readonly>
+        <div class="grid grid-cols-4 my-4 py-4 px-8  gap-2 md:grid-cols-4 " id="keys">
+            <button class="Operator-btn p-2 bg-orange-500 rounded hover:bg-orange-300 active:bg-orange-600" onclick="appendToDisplay('+')" >+</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('7')">7</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('8')">8</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('9')">9</button>
+            <button class="Operator-btn p-2 bg-orange-500 rounded hover:bg-orange-300 active:bg-orange-600" onclick="appendToDisplay('-')">-</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('4')">4</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('5')">5</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('6')">6</button>
+            <button class="Operator-btn p-2 bg-orange-500 rounded hover:bg-orange-300 active:bg-orange-600" onclick="appendToDisplay('*')">*</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('1')">1</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('2')">2</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('3')">3</button>
+            <button class="Operator-btn p-2 bg-orange-500 rounded hover:bg-orange-300 active:bg-orange-600" onclick="appendToDisplay('/')">/</button>
+            <button class="p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('0')">0</button>
+            <button class="Operator-btn p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="appendToDisplay('.')">.</button>
+            <button class=" p-2 bg-gray-500 rounded hover:bg-gray-200 active:bg-gray-300" onclick="calculateResult()">=</button>
+            <button class="Operator-btn p-2 bg-orange-500 rounded hover:bg-orange-300 active:bg-orange-600" onclick="clearDisplay()">C</button>
+        </div>
+     </div>
+   </div>
+
+     <script src="calculator.js"></script>
+</body>
+</html>
